@@ -55,6 +55,7 @@ app.get('/equiv', checkApiKey, (req, res) => {
   res.json(exemplos);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`ExpressCar API a escutar na porta ${PORT}`);
 });
+
